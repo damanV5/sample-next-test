@@ -1,0 +1,68 @@
+.vl-container{
+    height: auto;
+    width: 800px;
+    margin: auto;
+}
+
+.App{
+    height: 100vh
+}
+
+.player-title{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+html{
+    background-color: aliceblue;
+}
+
+.load-btn{
+    font-size: 16px;
+    padding: 5px;
+    width: 5em;
+
+}
+
+.video-inp , .token-inp{
+    width: 20rem;
+    height: 2.5em;
+}
+
+.cont{
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.loader {
+    display: inline-block;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin-left: 1em;
+}
+
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  .btn-container{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
