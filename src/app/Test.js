@@ -19,13 +19,14 @@ const Test = () => {
 
 
   const initPlayer = (videoId, token) => {
-    import('@viewlift/player/esm/bundle.css')
-    import('@viewlift/player/esm/index').then((e) => {
+    import('@viewlift/player-backup/esm/bundle.css')
+    import('@viewlift/player-backup/esm/index').then((e) => {
       VLPlayerCore = e.default;
       let config = {
         videoId: videoId,
         playerId: playerId,
         token: token,
+        autoplay:true
       }
       VLPlayerCore().init(config).then((res) => {
         console.log(res);
@@ -71,7 +72,7 @@ const Test = () => {
 
       <div className='player-title'>VL WEB PLAYER</div>
       <div className='vl-container'>
-        <video id='my-player' className='video-js' style={{ width: '100%', height: '100%' }}></video>
+        <video preload='auto' id='my-player' className='video-js' style={{ width: '100%', height: '100%' }}></video>
       </div>
     </div>
   );
