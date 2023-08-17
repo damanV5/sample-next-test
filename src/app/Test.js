@@ -28,7 +28,7 @@ const Test = () => {
         token: token,
         autoplay:true,
         customData: {
-          overrideNative:true,
+          // overrideNative:true,
         }
       }
       VLPlayerCore().init(config).then((res) => {
