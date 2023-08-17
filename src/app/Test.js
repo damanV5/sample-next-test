@@ -19,14 +19,19 @@ const Test = () => {
 
 
   const initPlayer = (videoId, token) => {
-    import('@viewlift/player/esm/bundle.css')
-    import('@viewlift/player/esm/index').then((e) => {
+    import('@viewlift/player-backup/esm/bundle.css')
+    import('@viewlift/player-bacup/esm/index').then((e) => {
       VLPlayerCore = e.default;
       let config = {
         videoId: videoId,
         playerId: playerId,
         token: token,
-        autoplay:true
+        autoplay:true,
+        customData: {
+          overrideNative:true,
+          nativeAudioTracks: false,
+          nativeVideoTracks: false
+        }
       }
       VLPlayerCore().init(config).then((res) => {
         console.log(res);
