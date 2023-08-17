@@ -28,9 +28,7 @@ const Test = () => {
         token: token,
         autoplay:true,
         customData: {
-          overrideNative:true,
-          nativeAudioTracks: false,
-          nativeVideoTracks: false
+
         }
       }
       VLPlayerCore().init(config).then((res) => {
