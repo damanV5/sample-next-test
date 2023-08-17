@@ -19,8 +19,8 @@ const Test = () => {
 
 
   const initPlayer = (videoId, token) => {
-    import('@viewlift/player/esm/bundle.css')
-    import('@viewlift/player/esm/index').then((e) => {
+    import('@viewlift/player-backup/esm/bundle.css')
+    import('@viewlift/player-backup/esm/index').then((e) => {
       VLPlayerCore = e.default;
       let config = {
         videoId: videoId,
