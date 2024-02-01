@@ -12,8 +12,8 @@ const Test = () => {
 
 
   useEffect(() => {
-    let videoId = '6b14d2ec-c55c-4705-aae5-7d3ccc46a75f';
-    let token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaXRlIjoibGl2LWdvbGYiLCJzaXRlSWQiOiI5ZWQ3ZGVlMC1jNzE5LTExZWMtYmMyNS1hMTk1YzJhMzQzNTciLCJhbm9ueW1vdXNJZCI6IjNiYzljNjM3N2VhNDFmNTY5Yzg3ZGIwODczZWI3YzcyNjYwYjI2ZmVhMmU3YWM4MjBmMDVhNzZjMzZlNzdhZWYiLCJpZCI6IjE2MGMzNmUyLWZjMTctMTFlZC04MGQ5LTdmYzI5NzE0NzliZCIsInVzZXJJZCI6IjE2MGMzNmUyLWZjMTctMTFlZC04MGQ5LTdmYzI5NzE0NzliZCIsImlwYWRkcmVzcyI6Ijc4LjYyLjI1Mi42IiwiaXBhZGRyZXNzZXMiOiI3OC42Mi4yNTIuNiwgMTAuMTIwLjM5LjE2NiwgMzUuMTc0LjEyOS43NywgMTMwLjE3Ni45OC4xNjAiLCJ1c2VybmFtZSI6ImFub255bW91cyIsImNvdW50cnlDb2RlIjoiTFQiLCJwb3N0YWxjb2RlIjoiNDYwMDEiLCJwcm92aWRlciI6InZpZXdsaWZ0IiwiZGV2aWNlSWQiOiJhdXRvLTE2MGMzNmUxLWZjMTctMTFlZC04MGQ5LTdmYzI5NzE0NzliZCIsImlhdCI6MTY4NTE0MTE2MCwiZXhwIjoxNzE2Njc3MTYwfQ.awqQz7kyl02xYHHUYBNBvY8sIQOuzOCOPuPkn_vL14g'
+    let videoId = 'bdba5a0c-34af-4afa-bd1b-d669ca6caff6';
+    let token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaXRlIjoibGl2LWdvbGYiLCJzaXRlSWQiOiI5ZWQ3ZGVlMC1jNzE5LTExZWMtYmMyNS1hMTk1YzJhMzQzNTciLCJhbm9ueW1vdXNJZCI6IjNiYzljNjM3N2VhNDFmNTY5Yzg3ZGIwODczZWI3YzcyNjYwYjI2ZmVhMmU3YWM4MjBmMDVhNzZjMzZlNzdhZWYiLCJpZCI6IjE2MGMzNmUyLWZjMTctMTFlZC04MGQ5LTdmYzI5NzE0NzliZCIsInVzZXJJZCI6IjE2MGMzNmUyLWZjMTctMTFlZC04MGQ5LTdmYzI5NzE0NzliZCIsImlwYWRkcmVzcyI6Ijc4LjYyLjI1Mi42IiwiaXBhZGRyZXNzZXMiOiI3OC42Mi4yNTIuNiwgMTAuMTIwLjM5LjE2NiwgMzUuMTc0LjEyOS43NywgMTMwLjE3Ni45OC4xNjAiLCJ1c2VybmFtZSI6ImFub255bW91cyIsImNvdW50cnlDb2RlIjoiTFQiLCJwb3N0YWxjb2RlIjoiNDYwMDEiLCJwcm92aWRlciI6InZpZXdsaWZ0IiwiZGV2aWNlSWQiOiJhdXRvLTE2MGMzNmUxLWZjMTctMTFlZC04MGQ5LTdmYzI5NzE0NzliZCIsImlhdCI6MTY4NTE0MTE2MCwiZXhwIjoxNzE2Njc3MTYwfQ.awqQz7kyl02xYHHUYBNBvY8sIQOuzOCOPuPkn_vL14g';
     initPlayer(videoId, token);
   }, [])
 
@@ -27,6 +27,7 @@ const Test = () => {
         playerId: playerId,
         token: token,
         autoplay:true,
+        apiBaseUrl:'https://api.prod-livgolfplus.viewlift.com'
       }
       VLPlayerCore().init(config).then((res) => {
         console.log(res);
