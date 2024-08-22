@@ -19,15 +19,15 @@ const Test = () => {
 
 
   const initPlayer = (videoId, token) => {
-    import('@viewlift/player-backup/esm/bundle.css')
-    import('@viewlift/player-backup/esm/index').then((e) => {
+    import('@viewlift/player/esm/bundle.css')
+    import('@viewlift/player/esm/index').then((e) => {
       VLPlayerCore = e.default;
       let config = {
         videoId: videoId,
         playerId: playerId,
         token: token,
         autoplay:true,
-        apiBaseUrl:'https://api.prod-livgolfplus.viewlift.com'
+        apiBaseUrl:'https://api.monumentalsportsnetwork.com'
 
       }
       VLPlayerCore().init(config).then((res) => {
