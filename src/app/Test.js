@@ -12,8 +12,8 @@ const Test = () => {
 
 
   useEffect(() => {
-    let videoId = 'bdba5a0c-34af-4afa-bd1b-d669ca6caff6';
-    let token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaXRlIjoibGl2LWdvbGYiLCJzaXRlSWQiOiI5ZWQ3ZGVlMC1jNzE5LTExZWMtYmMyNS1hMTk1YzJhMzQzNTciLCJhbm9ueW1vdXNJZCI6IjNiYzljNjM3N2VhNDFmNTY5Yzg3ZGIwODczZWI3YzcyNjYwYjI2ZmVhMmU3YWM4MjBmMDVhNzZjMzZlNzdhZWYiLCJpZCI6IjE2MGMzNmUyLWZjMTctMTFlZC04MGQ5LTdmYzI5NzE0NzliZCIsInVzZXJJZCI6IjE2MGMzNmUyLWZjMTctMTFlZC04MGQ5LTdmYzI5NzE0NzliZCIsImlwYWRkcmVzcyI6Ijc4LjYyLjI1Mi42IiwiaXBhZGRyZXNzZXMiOiI3OC42Mi4yNTIuNiwgMTAuMTIwLjM5LjE2NiwgMzUuMTc0LjEyOS43NywgMTMwLjE3Ni45OC4xNjAiLCJ1c2VybmFtZSI6ImFub255bW91cyIsImNvdW50cnlDb2RlIjoiTFQiLCJwb3N0YWxjb2RlIjoiNDYwMDEiLCJwcm92aWRlciI6InZpZXdsaWZ0IiwiZGV2aWNlSWQiOiJhdXRvLTE2MGMzNmUxLWZjMTctMTFlZC04MGQ5LTdmYzI5NzE0NzliZCIsImlhdCI6MTY4NTE0MTE2MCwiZXhwIjoxNzE2Njc3MTYwfQ.awqQz7kyl02xYHHUYBNBvY8sIQOuzOCOPuPkn_vL14g';
+    let videoId = '85e3a7fb-f17b-496a-9575-7c7a4ffc5037';
+    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlIjoibGl2LWdvbGYiLCJzaXRlSWQiOiI5ZWQ3ZGVlMC1jNzE5LTExZWMtYmMyNS1hMTk1YzJhMzQzNTciLCJpZCI6ImQyMjllODgwLTVlZWQtNGM3YS1iZWZmLTVmODYxMjQwNTFhYiIsInVzZXJJZCI6ImQyMjllODgwLTVlZWQtNGM3YS1iZWZmLTVmODYxMjQwNTFhYiIsImFub255bW91c0lkIjoiNWVkOTBiNjFhZjE1MWVkMThmNjVlM2I0NTg0NzhiYmMzZDZhNGNiNDQ3YTQzNDEwZmJlYzRhMzE0OTk0NWQzNSIsInVzZXJuYW1lIjoiYW5vbnltb3VzIiwiaXBhZGRyZXNzIjoiMTIyLjE2MS43OS43NyIsImlwYWRkcmVzc2VzIjoiMTIyLjE2MS43OS43NywxMC4xNjAuMC4xMDQiLCJjb3VudHJ5Q29kZSI6IklOIiwicG9zdGFsY29kZSI6IjExMDAwOCIsInByb3ZpZGVyIjoidmlld2xpZnQiLCJkZXZpY2VJZCI6ImJyb3dzZXItMmIxOTg4ZmQtYjczZC0zYzgzLWY0NDItNmFkZGQ4ZWVjYTIwIiwiaWF0IjoxNzE1OTQ0NzE0LCJleHAiOjE3NDc0ODA3MTR9.znAa1UpA3XzSUdwrkBXwudxFEMrXA-TShBt31bAW3oc';
     initPlayer(videoId, token);
   }, [])
 
@@ -27,7 +27,7 @@ const Test = () => {
         playerId: playerId,
         token: token,
         autoplay:true,
-        apiBaseUrl:'https://api.monumentalsportsnetwork.com'
+        apiBaseUrl:'https://livgolfplus.staging.api.viewlift.com'
 
       }
       VLPlayerCore().init(config).then((res) => {
